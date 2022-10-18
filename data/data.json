@@ -1,0 +1,96 @@
+{
+    "intro":{
+        "home":"My name is Jijainth Dhinakaran , I am a student in Deggendorf Institute of Technology , I am a self motivated Software Developer  who is highly intrested in Robotics and Space research ",
+        "cv":"Highly interested in Artificial intelligence, Robotics and Space. I have year of experience in Programming . Competitive in every task. Try to give my best in every situation. I am self-motivated Software Developer with the ability to work independently . I desire to be at the top in field in am interested in .",
+        "mot":"",
+        "proj":"These are some of my projects that I have done through out my carrer , I have worked with complex and dynamic softwares for various projects listed below",
+        "small":"My name is Jijainth Dhinakaran, I am studying B.Sc. Artificial Intelligence in Technischen Hochschule Deggendorf.",
+        "thoughts":"I think that AI can perceive things and solution that humans cannot calculate, AI can help us find relative answers of past and the future. We must utilise this technology and use it effectively in space so that one day human kind is not just on earth ."
+    },
+
+    "education":[{"school":"Paavai Vidhyashram","degree":"Higher Secondary Studies" ,"place":"India","start":"March 2018" ,"end":"March 2020"},
+                {"school":"Technische Hochschule Deggendorf","degree":"B.Sc. Artificial Intelligence " ,"place":"India","start":"Oct 2021" ,"end":"Mar 2025"}
+
+    ],
+        
+
+
+
+    "language":{
+        "english":"Native Speaker",
+        "german":"A2",
+        "tamil":"Native Speaker"
+
+    },
+
+    "social":{
+        "linkedin":"www.linkedin.com/in/jijainth-dhinakaran-5baa23233",
+        "instagram":""
+
+    },
+    
+    "skills":[
+        {"name":"Pyhton","image":"home/media/logos/python.png"},
+        {"name":"C#","image":"home/media/logos/csharp.png"},
+        {"name":"C++","image":"home/media/logos/c.png"},
+        {"name":"Java","image":"home/media/logos/java.png"},
+        {"name":"Linux OS","image":"home/media/logos/linux.png"},
+        {"name":"Machine Learning Modules","image":"home/media/logos/machine.png"},
+        {"name":"Django","image":"home/media/logos/django.png"},
+        {"name":"Virtual Reality SDK","image":"home/media/logos/vr.png"},
+        {"name":"Unity Game Development","image":"home/media/logos/unity.png"},
+        {"name":"Power BI","image":"home/media/logos/power-bi.png"},
+        {"name":"Raspberry Pi","image":"home/media/logos/raspberrypi.png"},
+        {"name":"SQL","image":"home/media/logos/sql.png"},
+        {"name":"HTML","image":"home/media/logos/html.png"},
+        {"name":"CSS","image":"home/media/logos/css3.png"},
+        {"name":"Microsoft 365","image":"home/media/logos/windows.png"},
+        {"name":"Adobe Photoshop","image":"home/media/logos/photoshop.png"}
+    ],
+
+
+    
+        
+
+
+    
+    
+    
+    "projects":
+    {
+        "python":[
+            {"id" : 0,"name":"Live Stock market Data Scrapping and Analysis GUI","des":"with the use of bs4(BeautifilSoup) , csv , tkinter, request modules in Python I developed a live data scrapping model that scraps the data and analysis the data and send feed back whether to buy or sell the listed stock . " ,"btn":true,"link":"" , "img":"home/media/project-picture/python-stock.png"},
+            {"id" : 1,"name":"Data analysis and Machine Learning model of water analysis using Support Vector Classifier","des":"with the help of pandas , sklearn ,  matplotlib , seaborn and numpy library I created a prediction model with 82% accuracy .","btn":false,"link":"" ,"img":"home/media/project-picture/python-analysis.png"},
+            {"id" : 2,"name":"Facebook Messaging Bot ","des":"using selenium , sys , json module in python I created a live bot that creates messages in Facebook and also comments on people post . ","btn":false,"link":"","img":"home/media/project-picture/python-facebook.png"},
+            {"id" : 3,"name":"Question or Statement Detection using  TfidVectorizer and Gradient Boosting Classifier","des":"with the help of sklearn I used TfidVectorizer and Gradient Boosting Classifier to developed a program to identify whether the  input of the user is a question or  statement . this program will keep on improving as we input data  . ","btn":false,"link":"", "img":""},
+            {"id" : 4,"name":"Face Detectionc using CascadeClassification","des":"the program run on the principle of Cascade Classification  that detects face and eyes of a person or image of a person ","btn":false,"link":"","img":"home/media/project-picture/python-face.png"},
+            {"id" : 5,"name":"Email Sending And Receiving program using smtplib, ssl and email library","des":"the program is based on getting connection with  port , fetching raw UTF-8 encoded messages with the help of email server port . decoding it and fetching the required data . ","btn":false,"link":"","img":"home/media/project-picture/python-email.png"},
+            {"id" : 6,"name":"Speech Recognition using pydub library","des":"the program detects audio file , changes the audio file speech into text and give us audio text in a txt format . ","btn":false,"link":"","img":"home/media/project-picture/python-speech.png"},
+            {"id" : 7,"name":"Time and Location Log using Python for Security ","des":"This program runs at the start of the PC and initiate log of the user time  and location every 3 hours and store it in a .csv format , this file  can be later viewed using this program . ","btn":false,"link":"","img":"home/media/project-picture/python-logger.png"},
+            {"id" : 0,"name":"VR Game using Vizard Library","des":"the program runs on proximity detection of the arm that is controlled by the user, If the arm touches the green ball which takes random coordinate inside the area of the sphere( where leng.of_Arm = Radius) , the ball resets the position. ","img":"home/media/project-picture/vizard.png"}
+            
+        ],
+
+        "unity":[
+            {"id" : 0,"name":"3D Scenery ","des":"its was my first projects in Unity where I instantiate glowing spear that rise up from the ground and slowly reaching the sparkling sky ","img":"home/media/project-picture/unity-3dscenery.png"},
+            {"id" : 1,"name":"Neural Network - Robotic Arm using Unity C#","des":"Training a Robotic arm created by me to reach the sensor located at specific coordinate using its joints movements . the project work on the base principle of Reinforcement learning and neural network . " ,"img":"home/media/project-picture/unity-arm.png"},
+            {"id" : 2,"name":"2D Retro Game in Unity ","des":"The game is Classic retro shooting game , the user is spawned in a with walls and enemy character uses A* algorithm to track down the player , the player has to survive using his/her mobility and power , as time increases more enemies are instantiated and more harder it gets   ","img":"home/media/project-picture/unity-game.png"}
+        ],
+
+        "vizard":[
+            {"id" : 0,"name":"VR Game using Vizard Library","des":"the program runs on proximity detection of the arm that is controlled by the user, If the arm touches the green ball which takes random coordinate inside the area of the sphere( where leng.of_Arm = Radius) , the ball resets the position. ","img":"home/media/project-picture/vizard.png"}
+        
+        ],
+        "powerbi":[
+            {"id" : 0,"name":"Power Bi report for the Electrification technology department of Vitesco Technology ","des":"A 18 page report was created and published by me for the company , Each page contains a lot of Crucial information and the whole ET department ( 5000 people approx.) use my report inorder to evaluate processing and financial well being of their company ." ,"img":"home/media/project-picture/powerbi.png"}
+        
+        ]
+
+    }
+
+
+
+
+
+
+}

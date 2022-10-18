@@ -1,0 +1,72 @@
+{% extends 'home/base-nav.html' %}
+
+{%block content%}
+
+{% load static %}
+
+<div class="container-fluid" id="home-art2"> 
+    <img src="{% static 'home\media\astroid.jpg'%}" class ="img-fluid" alt="the photo" id="home-image">    
+    
+</div>
+
+
+<div class="container-fluid" id="about-container3">
+    <div class="container text-center" id="about-con1"> 
+        <h1 id="text-h">About Me</h1>
+        <h5 style="color:rgb(255, 255, 255) ;">{{data.intro.cv}}</h5> 
+    </div>
+</div>
+
+<div class="container-fluid" id="about-container1">
+    <div class="container text-center" id="about-con4"> 
+        <h1 style="color:rgb(193, 85, 255) ;">Programming Languages I know :</h1>
+    </div>
+</div>
+
+<div class="container-fluid" id="about-container1">
+    <div class="container text-center" id="about-con2">  
+        <div class="container text-center">
+            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            {% for i in data.skills %}
+              <div class="col">
+                <div class="p-3 background-color" id="about-program-image-con">
+                    <img src="{%static i.image %}" class="img-thumbnail" alt="...">
+                </div>
+              </div> 
+            {% endfor %}  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" id="about-container2">
+    <div class="container text-center" id="about-con3"> 
+        <h1 style="color:rgb(193, 85, 255) ; text-align:center;">Why I Chose This Carrer .. </h1>
+        <h5 style="color:rgb(255, 255, 255) ;">{{data.intro.thoughts}}</h5> 
+    </div>
+</div>
+
+
+<div class="container-fluid" id="about-container1">
+    <div class="container text-center" id="about-con5"> 
+        
+        <h1 style="color:rgb(193, 85, 255) ; ">Social-Link</h1>
+        <a href="/home/" class="btn btn-primary  " id="about-link-btn" tabindex="-1" role="button"  aria-disabled="true">LinkedIn</a><br>
+        <a href="/home/" class="btn btn-primary  " id="about-link-btn" tabindex="-1" role="button"  aria-disabled="true">Instagram</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}

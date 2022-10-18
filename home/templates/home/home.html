@@ -1,0 +1,110 @@
+{% extends 'home/base-nav.html' %}
+
+{%block content%}
+
+{% load static %}
+
+<img src="{% static 'home\media\galaxy.jpg'%}" class ="img-fluid" alt="the photo" id="home-image">
+
+<div class="container-fluid" id="home-container1">
+
+
+
+    <div class="container text-center" id="home-con1">  
+        <div class="container text-center" > 
+            <h1 id ="text-h" >Hello There !</h1>
+        </div> 
+        <h4 id ="text-p" >{{ data.intro.home }}</h4>
+                        
+    </div>
+</div>
+
+
+
+<div class="container-fluid" id="home-container3">
+    <div class="container text-center" id="art1">    
+        <div class="row"   style="height: 100%;">
+            <div class="col-6" >
+                <div class="container-fluid" >
+                    <div class="row g-0 text-center">    
+                        <div class="card" id="home-card1" style="border-color:rgb(168, 79, 252) ;" >
+                            <img src="{% static 'home\media\project-picture/unity-3dscenery.png'%}" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: rgb(36, 35, 35) ; ">
+                            <h5 class="card-title" style="color: white">3D Scenery <span class="badge bg-danger" >Unity</span> </h5>
+                            <p class="card-text" style="color: white" >A simple and relaxing Unity rendering scene where I instantiate glowing spear that rise up from the ground and slowly reaching the sparkling sky</p>
+                            <a href="/projects/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="card" id="home-card1" style="border-color:rgb(168, 79, 252) ;">
+                            <img src="{% static 'home\media\project-picture/vizard.png'%}" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: rgb(36, 35, 35) ;">
+                            <h5 class="card-title" style="color: white" >VR Game using Vizard Library <span class="badge background-color " style="background-color: rgb(2, 247, 234);" >Vizard SDK</span> </h5>
+                            <p class="card-text" style="color: white" >A VR proximity detection priciple based game using Vizard , a python VR extension</p>
+                            <a href="/projects/" class="btn btn-primary">Read More </a>
+                            </div>
+                        </div>
+
+                        <div class="card" id="home-card1" style="border-color:rgb(168, 79, 252) ;">
+                            <img src="{% static 'home\media\project-picture/powerbi.png'%}" class="card-img-top" alt="...">
+                            <div class="card-body"  style="background-color: rgb(36, 35, 35) ;" >
+                            <h5 class="card-title" style="color: white">Power Bi report for the Electrification technology department of Vitesco Technology <span class="badge bg-warning" >Power Bi</span></h5>
+                            <p class="card-text" style="color: white" >A 18 page report was created and published by me for the company inorder to evaluate processing and financial well being of their company </p>
+                            <a href="/projects/" class="btn btn-primary">Read More </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> 
+            </div>
+            <div class="col-6" >
+                <div class="container-fluid" >
+                    <div class="row g-0 text-center"> 
+                        
+
+                        <div class="card" id="home-card1" style="border-color:rgb(168, 79, 252) ;">
+                            <img src="{% static 'home\media\project-picture/unity-game.png'%}" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: rgb(36, 35, 35) ;" >
+                            <h5 class="card-title" style="color: white" >2D Retro Game in Unity  <span class="badge bg-danger" >Unity</span>  </h5>
+                            <p class="card-text" style="color: white" >Classic retro shooting game , the user is spawned in a with walls and enemy character uses A* algorithm to track down the player , the player has to survive using his/her mobility and power , as time increases more enemies are instantiated and more harder it gets</p>
+                            <a href="/projects/" class="btn btn-primary">Read More </a>
+                            </div>
+                        </div>
+
+                        <div class="card" id="home-card1" style="border-color:rgb(168, 79, 252) ;">
+                            <img src="{% static 'home\media\project-picture/python-analysis.png'%}" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: rgb(36, 35, 35) ;" >
+                            <h5 class="card-title" style="color: white" >Data analysis and Machine Learning model <span class="badge bg-success" >Python</span>  </h5>
+                            <p class="card-text" style="color: white" >Pandas , sklearn ,  matplotlib , seaborn and numpy library a prediction model with 82% accuracy </p>
+                            <a href="/projects/" class="btn btn-primary">Read More </a>
+                            </div>
+                        </div>
+
+                        <div class="card" id="home-card1" style="border-color:rgb(168, 79, 252) ;">
+                            <img src="{% static 'home\media\project-picture/python-stock.png'%}" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: rgb(36, 35, 35) ;" >
+                            <h5 class="card-title" style="color: white">Live Stock market Data Scrapping and Analysis GUI <span class="badge bg-success" >Python</span> </h5>
+                            <p class="card-text" style="color: white" >Live data scrapping model that scraps the data and analysis the data and send feed back whether to buy or sell the listed stock . </p>
+                            <a href="/projects/" class="btn btn-primary">Read More </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>    
+            </div>
+        </div>  
+        <h1 style="margin-top: 10px;"><a href="/projects/">See More </a> </h1>             
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}

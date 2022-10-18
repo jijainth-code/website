@@ -1,0 +1,24 @@
+{% extends 'home/base-nav.html' %}
+
+{%block content%}
+
+
+
+
+<div class="container-fluid" id="contact-container1">
+    <div class="container text-center" id="contact-con1"> 
+
+        <form method="post" action="/contact/">
+            {% csrf_token %}
+            {{form.as_p}}
+
+
+            <button type="submit" class="btn btn-primary" name="save">Submit</button>
+        
+        </form>
+        
+    </div>
+</div>
+
+
+{%endblock%}

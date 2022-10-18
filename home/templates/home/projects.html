@@ -1,0 +1,129 @@
+{% extends 'home/base-nav.html' %}
+
+{%block content%}
+
+{% load static %}
+
+    
+<div class="container text-center" id="home-art2"> 
+    <img src="{% static 'home\media\earth.jpg'%}" class ="img-fluid" alt="the photo" id="home-image">    
+    
+</div>
+
+<div class="container-fluid" id="home-container1"  >
+    
+    <div class="container text-center" id="home-con1">  
+        <div class="container text-center" style="height: 100% ;"> 
+            
+            <h3 style="color: white;">{{data.intro.proj}}</h3>
+            
+        </div> 
+        
+                        
+    </div>
+</div>
+
+
+
+{%for i in data.projects.python%}
+        <div class="container-fluid" id="project-container0">  
+            <div class="container text-center" id="project-con0">
+                <div class="container text-center" id="project-con1">  
+                    <div class="row"   style="height: 100%;">
+                        <div class="col-5" >
+                            <div  id="project-img0">
+                                <img src="{% static i.img %}" class="img-fluid rounded-start" style="height: 100%;width:100%; border-radius: 5px;" alt="project image here !">
+                            </div> 
+                        </div>
+                        <div class="col-7" >
+                            <div class="container-fluid" id="project-text0">
+                                <h3 style="text-align:left;" id="text-p">{{i.name}} <span class="badge bg-success"  >Python</span></h3>
+                                <h6 class="fst-italic" style="text-align: left;" id="text-p" >{{i.des}}</h6>
+    
+                                
+                                {% if i.btn == True %}
+                                <a href="/home/" class="btn btn-primary stretched-link" >Try It</a>
+                                {% endif %}
+
+                            </div> 
+                        </div>
+                    </div>  
+                </div>   
+            </div>
+        </div>
+{% endfor %}
+
+
+
+{%for i in data.projects.unity%}
+        <div class="container-fluid" id="project-container0">  
+            <div class="container text-center" id="project-con0">
+                <div class="container text-center" id="project-con1">  
+                    <div class="row"   style="height: 100%;">
+                        
+                        <div class="col-5" >
+                            <div  id="project-img0">
+                                <img src="{% static i.img %}" class="img-fluid"  style="height: 100%;width:100%; border-radius: 5px;" alt="project image here !">
+                            </div> 
+                        </div>
+                        <div class="col-7" >
+                            <div class="container-fluid" id="project-text0">
+                                <h3 style="text-align:left; " id="text-p" >{{i.name}} <span class="badge bg-danger" >Unity</span></h3>
+                                <h6 class="fst-italic" style="text-align: left; " id="text-p">{{i.des}}</h6>
+        
+                                
+                                {% if i.btn == True %}
+                                <a href="/home/" class="btn btn-primary stretched-link" >Try It</a>
+                                {% endif %}
+
+                            </div> 
+                        </div>
+                    </div>  
+                </div>   
+            </div>
+        </div>
+
+{% endfor %}
+
+{%for i in data.projects.powerbi%}
+        <div class="container-fluid" id="project-container0">  
+            <div class="container text-center" id="project-con0">
+                <div class="container text-center" id="project-con1">  
+                    <div class="row"   style="height: 100%;">
+                        
+                        <div class="col-5" >
+                            <div  id="project-img0">
+                                <img src="{% static i.img %}" class="img-fluid"  style="height: 100%;width:100%; border-radius: 5px;" alt="project image here !">
+                            </div> 
+                        </div>
+                        <div class="col-7" >
+                            <div class="container-fluid" id="project-text0">
+                                <h3 style="text-align:left;" id="text-p" >{{i.name}} <span class="badge bg-warning" >Power Bi</span></h3>
+                                <h6 class="fst-italic" style="text-align: left;" id="text-p">{{i.des}}</h6>
+        
+                                
+                                {% if i.btn == True %}
+                                <a href="/home/" class="btn btn-primary stretched-link" >Try It</a>
+                                {% endif %}
+
+                            </div> 
+                        </div>
+                    </div>  
+                </div>   
+            </div>
+        </div>
+
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}
